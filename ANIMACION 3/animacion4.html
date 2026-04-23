@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+.contenedor{
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+    background-image: url("img/fondo.png"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.personaje{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+    background-image: url("img/megamanx.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    animation: megaman 4s infinite linear;
+}
+
+@keyframes megaman {
+    from{ left: 0; }
+    to{ left: 300px; }
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="personaje"></div>
+</div>
+
+</body>
+</html>

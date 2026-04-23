@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+.contenedor{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    margin: 50px auto;
+}
+
+.cuadrito{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+
+    animation: cuadrito 1s infinite alternate ease-in-out;
+}
+
+@keyframes cuadrito{
+    from{
+        left: 0;
+        top: 0;
+    }
+    to{
+        left: 300px;
+        top: 100px;
+    }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="contenedor">
+    <div class="cuadrito"></div>
+</div>
+
+</body>
+</html>
